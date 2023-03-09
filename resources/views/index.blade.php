@@ -38,7 +38,7 @@
                         <div class="carousel-item active">
                             <img src="{{ asset('assets/img/tvpega.png') }}" class="d-block w-100" alt="Imagem da Notícia 1">
                             <div class="carousel-caption">
-                                <a href="#">
+                                <a class="text-light text-decoration-none hover-underline" href="#">
                                     <h5>Título da Notícia 1</h5>
                                     <p>Descrição da Notícia 1</p>
                                 </a>
@@ -47,7 +47,7 @@
                         <div class="carousel-item">
                             <img src="{{ asset('assets/img/tvpega.png') }}" class="d-block w-100" alt="Imagem da Notícia 2">
                             <div class="carousel-caption">
-                                <a href="#">
+                                <a class="text-light text-decoration-none hover-underline" href="#">
                                     <h5>Título da Notícia 2</h5>
                                     <p>Descrição da Notícia 2</p>
                                 </a>
@@ -56,7 +56,7 @@
                         <div class="carousel-item">
                             <img src="{{ asset('assets/img/tvpega.png') }}" class="d-block w-100" alt="Imagem da Notícia 3">
                             <div class="carousel-caption">
-                                <a href="#">
+                                <a class="text-light text-decoration-none hover-underline" href="#">
                                     <h5>Título da Notícia 3</h5>
                                     <p>Descrição da Notícia 3</p>
                                 </a>
@@ -137,7 +137,8 @@
             <div class="row justify-content-center align-items-center">
                 <div class="col-md-7">
                     <p class="fs-4  text-secondary">
-                        <strong class="fs-4 text-dark">Aviso importante:</strong> Associados em dia com a Associação, para se
+                        <strong class="fs-4 text-dark">Aviso importante:</strong> Associados em dia com a Associação, para
+                        se
                         cadastrarem no nosso mapa, basta
                         enviar sua logomarca para marketing@abcjpega.org.br
                     </p>

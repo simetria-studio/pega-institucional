@@ -4,13 +4,9 @@
     box-sizing: border-box;
     font-size: 1rem;
 }
-a {
-    color: #fff;
-    text-decoration: none;
-}
-a:hover{
-    color: #fff;
-    text-decoration: underline;
+
+.hover-underline:hover{
+    text-decoration: underline !important;
 }
 .nav-link:hover {
     background-color: #555;

@@ -5,12 +5,6 @@
     outline: none;
     box-shadow: none;
 }
-.default-title {
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 28px;
-    text-align: center;
-}
 
 .rounded-20 {
     border-radius: 20px;
@@ -79,19 +73,6 @@ header {
             font-style: normal;
         }
     }
-    // .content {
-    //     display: flex;
-    //     align-items: center;
-    //     height: 155px;
-
-    //     span {
-    //         font-size: 0.875rem;
-    //         font-weight: 400;
-    //         line-height: 16px;
-    //         text-align: center;
-    //         color: #fff;
-    //     }
-    // }
     nav {
         background-color: #71191c;
 
@@ -330,12 +311,7 @@ footer {
 }
 // sobre nos
 
-.sobre-nos {
-    p {
-        font-size: 12px;
-        line-height: 14px;
-    }
-}
+
 
 .equipe {
     display: flex;
@@ -567,6 +543,12 @@ footer {
     shape-outside: url(public/assets/img/jovem-pega.png);
     shape-margin: 20px;
     margin-bottom: 20px;
+}
+.img-sobre{
+    float: left;
+    margin-right: 10px;
+    shape-margin: 20px;
+    margin-bottom: 10px;
 }
 .brasil {
     max-width: 100%;

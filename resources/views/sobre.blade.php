@@ -3,8 +3,8 @@
 @section('title', 'ABCJPêga | Sobre nós')
 
 @section('content')
-    <div class="my-5">
-        <h1 class="default-title">Sobre nós</h1>
+    <div class="my-5 text-center">
+        <h1 class="">Sobre nós</h1>
     </div>
     <div class="container mb-5">
         <div class="separator"><img src="{{ asset('assets/img/burrinho.png') }}" class="img-fluid" alt=""></div>
@@ -12,52 +12,74 @@
     {{-- Sobre nos  --}}
     <div class="container mb-5">
         <div class="row justify-content-center align-items-center">
-            <div class="col-md-6 sobre-nos">
-                <div class="row align-items-center ">
-                    <div class="col-md-2 text-center">
-                        <img src="{{ asset('assets/img/nota.png') }}" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-md-10 p-2 text-center">
-                        <h5 class="text-center fs-5">Quem Somos?</h5>
-                        <p class="fs-6">
-                            A Associação
-                            A Associação Brasileira dos Criadores de Jumento Pêga foi fundada em 15 de agosto de 1947, no
-                            Parque de Exposições Bolívar de Andrade (Gameleira) na cidade de Belo Horizonte – Minas Gerais,
-                            onde possui sua sede.
-                        </p>
-                        <p class="fs-6 ">
-                            A ata de criação da instituição foi assinada pelos nossos sócios fundadores, que movidos pela
-                            paixão e tradição difundiram a raça Pêga. <br>
-                            <a href="#" class="text-custom">Continuar Lendo...</a>
-                        </p>
-                    </div>
-                </div>
+            <div class="col-md-6 p-3">
+                <h5 class="fs-5 text-center">Quem Somos?</h5>
+                <img src="{{ asset('assets/img/nota.png') }}" class="img-fluid img-sobre" alt="">
+                <details>
+                    <summary class="fs-6">
+                        A Associação
+                        A Associação Brasileira dos Criadores de Jumento Pêga foi fundada em 15 de agosto de 1947, no
+                        Parque de Exposições Bolívar de Andrade (Gameleira) na cidade de Belo Horizonte – Minas Gerais,
+                        onde possui sua sede.
+                        A ata de criação da instituição foi assinada pelos nossos sócios fundadores, que movidos pela
+                        paixão e tradição difundiram a raça Pêga.
+                    </summary>
+                    <p>São sócios fundadores da ABCJPêga os senhores Alcindo Vieira de Rezende, Amâncio Ferreira de Assis,
+                        Américo de Oliveira, Américo Moacir de Oliveira, Américo Dutra de Resende, Américo Vieira de
+                        Rezende, Antônio Brandão da Rocha, Antônio Horácio Vieira, Antônio Saturnino de Resende, Ascânio
+                        Afonso Diniz, Aurélio Resende, Bolivar de Andrade, Donato de Andrade, Donorte Lourenço André,
+                        Eduardo Victor de Carvalho, Elizário José de Resende, Ernesto Resende, Fábio Pereira de Resende,
+                        Franciso Baeta de Siqueira, Francisco de Oliveira Naves, Gastão Resende, Geraldo Vidigal, João
+                        Piassi, Joaquim Fernandes Braga, José Eduardo de Resende, José Gabriel Ferreira Neto, José Resende,
+                        José Saturnino de Resende, José Tavares de Melo, Manoel Marques Vieira, Márcio Andrade, Orlando de
+                        Andrade, Raymundo Tavares da Silva, Viúva Eduardo Vieira de Resende, Waldemar de Resende Urbano e
+                        Wander de Andrade.
+
+                        A ABCJPêga desde 1986, por expressa concessão do Ministério da Agricultura, Pecuária e Abastecimento
+                        (MAPA), é a única entidade competente e responsável pela administração do Registro Genealógico da
+                        raça Pêga em todo território nacional.
+
+                        Visando o desenvolvimento e crescimento da Pêga, uma das principais prestações de serviço da
+                        associação tornou-se também a realização da Exposição Nacional ENAPÊGA, reunindo os maiores
+                        criadores da raça e permitindo o julgamento dos melhores animais do país.
+
+                        Foi com muita dedicação de todos associados juntamente com todas diretorias que assumiram a
+                        administração da Pêga. A entidade chegou ao ano de 2018 com o número de sócios ultrapassando a casa
+                        dos 1.570 e 35.825 animais registrados.
+
+                        A raça Pêga é conhecidamente a raça de preferência dos criadores em diversas regiões do País.</p>
+                </details>
             </div>
-            <div class="col-md-6 sobre-nos">
-                <div class="row align-items-center ">
-                    <div class="col-md-2 text-center">
-                        <img src="{{ asset('assets/img/burrinho.png') }}"  width="150" alt="">
-                    </div>
-                    <div class="col-md-10 p-2 text-center">
-                        <h5 class="text-center fs-5">Nossa missão</h5>
-                        <p class="fs-6">
-                            A missão da Associação Brasileira dos Criadores de Jumento Pêga está no aperfeiçoamento e
-                            aprimoramento das características morfológicas e do andamento dos animais da raça Pêga. A
-                            Associação visa a evolução da raça através do serviço cartorial de registros, que nos permite o
-                            levantamento em números do histórico da raça.
-                        </p>
-                        <p class="fs-6">
-                            O Ministério da Agricultura reconhece a ABCJPêga como única instituição <br>
-                            <a href="#" class="text-custom">Continuar Lendo...</a>
-                        </p>
-                    </div>
-                </div>
+
+
+            <div class="col-md-6 p-3">
+                <h5 class="text-center fs-5">Nossa missão</h5>
+                <img src="{{ asset('assets/img/burrinho.png') }}" class="img-sobre" alt="">
+                <details>
+                    <summary>
+                        A missão da Associação Brasileira dos Criadores de Jumento Pêga está no aperfeiçoamento e
+                        aprimoramento das características morfológicas e do andamento dos animais da raça Pêga. A
+                        Associação visa a evolução da raça através do serviço cartorial de registros, que nos permite o
+                        levantamento em números do histórico da raça.
+                    </summary>
+                    <p>
+                        O Ministério da Agricultura reconhece a ABCJPêga como única instituição responsável pela
+                        administração do registro genealógico da raça Pêga, o que torna a entidade referência nacional.
+
+                        A atuação da Associação Pêga permite a valorização crescente da raça, sempre conhecida pela sua
+                        resistência para percorrer longas distâncias e aptidão ao trabalho no campo, e atualmente também
+                        visada pela comodidade da marcha, que garante conforto ao cavaleiro, pela sua beleza e docilidade.
+
+                        Nossa missão também é a realização da exposição Nacional, concursos de marcha e o Leilão dos
+                        Associados. Esses eventos reúnem os maiores criadores e os melhores animais representantes da raça.
+                    </p>
+                </details>
             </div>
         </div>
     </div>
     {{-- equipe --}}
     <div class="container mb-5">
-        <h1 class="default-title mb-5">Equipe de Excelência:</h1>
+        <h2 class="text-center mb-5">Equipe de Excelência:</h2>
         <div class="equipe">
             <div class="membro">
                 <img src="{{ asset('assets/img/foto_mariana.png') }}" class="mb-2" alt="Foto de Mariana">
