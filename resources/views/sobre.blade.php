@@ -11,7 +11,7 @@
     </div>
     {{-- Sobre nos  --}}
     <div class="container mb-5">
-        <div class="row justify-content-center align-items-center">
+        <div class="row  justify-content-around">
             <div class="col-md-6 p-3">
                 <h5 class="fs-5 text-center">Quem Somos?</h5>
                 <img src="{{ asset('assets/img/nota.png') }}" class="img-fluid img-sobre" alt="">
@@ -52,7 +52,7 @@
             </div>
 
 
-            <div class="col-md-6 p-3">
+            <div class="col-md-6  p-3">
                 <h5 class="text-center fs-5">Nossa missão</h5>
                 <img src="{{ asset('assets/img/burrinho.png') }}" class="img-sobre" alt="">
                 <details>
@@ -115,29 +115,114 @@
     <div class="depoimentos">
         <div class="depoimento text-light mb-5  p-3">
             <h1 class="text-center">" Depoimentos:</h1>
-            <div class="row align-items-center justify-content-center ">
-                <div class="col-md-3 d-flex justify-content-center">
-                    <div class="foto_depoimento">
-                        <img src="{{ asset('assets/img/foto_cristiano.png') }}" class="img-fluid" alt="">
-                        <h5 class="text-center">Cristiano Marzola</h5>
-                        <p class="text-center fs-6">Fazenda Certeza</p>
-                    </div>
 
+            <div id="depoimentos" class="carousel depoimentos   slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div class="col-md-9 p-2 text-center texto">
-                    <p>
-                        ""Minha paixão por fazenda e animais, principalmente jumentos da raça Pega, vem desde pequeno,
-                        quando sempre acompanhei meu avô João Humberto Carvalho e também os criatórios de dois tios, Marco
-                        Antonio Barbosa e Cláudio Carvalho. Em 1982 meu pai comprou uma fazenda em Uberaba, trouxemos nelore
-                        e mangalarga marchador do MS. Foi quando pedi para iniciar a criação de Pega. Compramos do tio
-                        Cláudio 5 fêmeas e o reprodutor Nesso de PassaTempo, ganhei dele e do Marco Antonio uma jumenta de
-                        cada. Fizemos várias parcerias importantes, para ter acesso a grandes reprodutores além dos nossos,
-                        como Gás Ianque, Ianque da Vale Verde, Rena Oceano e Indiano Maab. Hoje, depois de tropeços,
-                        aprendizado e vitórias, tenho 35 anos de criação sempre focados em andamento, temperamento, índole e
-                        raça. Sou muito grato e orgulhoso por criar e vivenciar a raça Pega.""
-                    </p>
+                <div class="carousel-inner">
+                    <div class="carousel-item my-3 active">
+                        <div class="row align-items-center justify-content-center ">
+                            <div class="col-md-3 d-flex justify-content-center">
+                                <div class="foto_depoimento">
+                                    <img src="{{ asset('assets/img/foto_cristiano.png') }}" class="img-fluid"
+                                        alt="">
+                                    <h5 class="text-center">Cristiano Marzola</h5>
+                                    <p class="text-center fs-6">Fazenda Certeza</p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-9 p-4  texto">
+                                <p>
+                                    ""Minha paixão por fazenda e animais, principalmente jumentos da raça Pega, vem desde
+                                    pequeno,
+                                    quando sempre acompanhei meu avô João Humberto Carvalho e também os criatórios de dois
+                                    tios, Marco
+                                    Antonio Barbosa e Cláudio Carvalho. Em 1982 meu pai comprou uma fazenda em Uberaba,
+                                    trouxemos nelore
+                                    e mangalarga marchador do MS. Foi quando pedi para iniciar a criação de Pega. Compramos
+                                    do tio
+                                    Cláudio 5 fêmeas e o reprodutor Nesso de PassaTempo, ganhei dele e do Marco Antonio uma
+                                    jumenta de
+                                    cada. Fizemos várias parcerias importantes, para ter acesso a grandes reprodutores além
+                                    dos nossos,
+                                    como Gás Ianque, Ianque da Vale Verde, Rena Oceano e Indiano Maab. Hoje, depois de
+                                    tropeços,
+                                    aprendizado e vitórias, tenho 35 anos de criação sempre focados em andamento,
+                                    temperamento, índole e
+                                    raça. Sou muito grato e orgulhoso por criar e vivenciar a raça Pega.""
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item my-3">
+                        <div class="row align-items-center justify-content-center ">
+                            <div class="col-md-3 d-flex justify-content-center">
+                                <div class="foto_depoimento">
+                                    <img src="{{ asset('assets/img/foto_cristiano.png') }}" class="img-fluid" alt="">
+                                    <h5 class="text-center">Cristiano Marzola</h5>
+                                    <p class="text-center fs-6">Fazenda Certeza</p>
+                                </div>
+
+                            </div>
+                            <div class="col-md-9 p-4 texto">
+                                <p>
+                                    ""Minha paixão por fazenda e animais, principalmente jumentos da raça Pega, vem desde pequeno,
+                                    quando sempre acompanhei meu avô João Humberto Carvalho e também os criatórios de dois tios, Marco
+                                    Antonio Barbosa e Cláudio Carvalho. Em 1982 meu pai comprou uma fazenda em Uberaba, trouxemos nelore
+                                    e mangalarga marchador do MS. Foi quando pedi para iniciar a criação de Pega. Compramos do tio
+                                    Cláudio 5 fêmeas e o reprodutor Nesso de PassaTempo, ganhei dele e do Marco Antonio uma jumenta de
+                                    cada. Fizemos várias parcerias importantes, para ter acesso a grandes reprodutores além dos nossos,
+                                    como Gás Ianque, Ianque da Vale Verde, Rena Oceano e Indiano Maab. Hoje, depois de tropeços,
+                                    aprendizado e vitórias, tenho 35 anos de criação sempre focados em andamento, temperamento, índole e
+                                    raça. Sou muito grato e orgulhoso por criar e vivenciar a raça Pega.""
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item my-3">
+                        <div class="row align-items-center justify-content-center ">
+                            <div class="col-md-3 d-flex justify-content-center">
+                                <div class="foto_depoimento">
+                                    <img src="{{ asset('assets/img/foto_cristiano.png') }}" class="img-fluid" alt="">
+                                    <h5 class="text-center">Cristiano Marzola</h5>
+                                    <p class="text-center fs-6">Fazenda Certeza</p>
+                                </div>
+                            </div>
+                            <div class="col-md-9 p-4 texto">
+                                <p>
+                                    ""Minha paixão por fazenda e animais, principalmente jumentos da raça Pega, vem desde pequeno,
+                                    quando sempre acompanhei meu avô João Humberto Carvalho e também os criatórios de dois tios, Marco
+                                    Antonio Barbosa e Cláudio Carvalho. Em 1982 meu pai comprou uma fazenda em Uberaba, trouxemos nelore
+                                    e mangalarga marchador do MS. Foi quando pedi para iniciar a criação de Pega. Compramos do tio
+                                    Cláudio 5 fêmeas e o reprodutor Nesso de PassaTempo, ganhei dele e do Marco Antonio uma jumenta de
+                                    cada. Fizemos várias parcerias importantes, para ter acesso a grandes reprodutores além dos nossos,
+                                    como Gás Ianque, Ianque da Vale Verde, Rena Oceano e Indiano Maab. Hoje, depois de tropeços,
+                                    aprendizado e vitórias, tenho 35 anos de criação sempre focados em andamento, temperamento, índole e
+                                    raça. Sou muito grato e orgulhoso por criar e vivenciar a raça Pega.""
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#depoimentos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#depoimentos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
+
+
         </div>
 
     </div>

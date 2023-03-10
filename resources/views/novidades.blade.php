@@ -36,10 +36,10 @@
                     <div class="card card-custom border-0 text-start">
                         <img class="card-img-top img-fluid" src="holder.js/100px180/">
                         <div class="card-body">
-                            <h4 class="card-title text-custom text-center border-bottom">Nota da diretoria
+                            <h4 class="card-title text-custom mx-auto border-bottom" id="titulo">Nota da diretoria
                                 <div class="risco-setores"></div>
                             </h4>
-                            <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
+                            <p class="card-text mb-3 descricao-card" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
                                 id
                                 nulla morbi. Cras nisl, euismod velit feugiat vel aliquet elementum. In proin sagittis vitae
                                 tortor sed enim mi diam. Quam ac dui etiam nunc vitae arcu dui faucibus.
@@ -54,10 +54,10 @@
                     <div class="card card-custom border-0 text-start">
                         <img class="card-img-top img-fluid" src="holder.js/100px180/">
                         <div class="card-body">
-                            <h4 class="card-title text-custom text-center border-bottom">Nota da diretoria
+                            <h4 class="card-title text-custom mx-auto text-center border-bottom" id="titulo">Nota da diretoria
                                 <div class="risco-setores"></div>
                             </h4>
-                            <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
+                            <p class="card-text mb-3 descricao-card" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
                                 id
                                 nulla morbi. Cras nisl, euismod velit feugiat vel aliquet elementum. In proin sagittis vitae
                                 tortor sed enim mi diam. Quam ac dui etiam nunc vitae arcu dui faucibus.
@@ -72,10 +72,10 @@
                     <div class="card card-custom border-0 text-start">
                         <img class="card-img-top img-fluid" src="holder.js/100px180/">
                         <div class="card-body">
-                            <h4 class="card-title text-custom text-center border-bottom">Nota da diretoria
+                            <h4 class="card-title text-custom mx-auto text-center border-bottom" id="titulo">Nota da diretoria
                                 <div class="risco-setores"></div>
                             </h4>
-                            <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
+                            <p class="card-text mb-3 descricao-card" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
                                 id
                                 nulla morbi. Cras nisl, euismod velit feugiat vel aliquet elementum. In proin sagittis vitae
                                 tortor sed enim mi diam. Quam ac dui etiam nunc vitae arcu dui faucibus.
@@ -96,10 +96,10 @@
                     <div class="card card-custom border-0 text-start">
                         <img class="card-img-top img-fluid" src="holder.js/100px180/">
                         <div class="card-body">
-                            <h4 class="card-title text-custom text-center border-bottom">Titulo do evento
+                            <h4 class="card-title text-custom mx-auto text-center border-bottom" id="titulo">Titulo do evento
                                 <div class="risco-setores"></div>
                             </h4>
-                            <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
+                            <p class="card-text mb-3 descricao-card" > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
                                 id
                                 nulla morbi. Cras nisl, euismod velit feugiat vel aliquet elementum. In proin sagittis vitae
                                 tortor sed enim mi diam. Quam ac dui etiam nunc vitae arcu dui faucibus.
@@ -114,10 +114,10 @@
                     <div class="card card-custom border-0 text-start">
                         <img class="card-img-top img-fluid" src="holder.js/100px180/">
                         <div class="card-body">
-                            <h4 class="card-title text-custom text-center border-bottom">Titulo do evento
+                            <h4 class="card-title text-custom mx-auto text-center border-bottom" id="titulo">Titulo do evento
                                 <div class="risco-setores"></div>
                             </h4>
-                            <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
+                            <p class="card-text mb-3 descricao-card" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
                                 id
                                 nulla morbi. Cras nisl, euismod velit feugiat vel aliquet elementum. In proin sagittis vitae
                                 tortor sed enim mi diam. Quam ac dui etiam nunc vitae arcu dui faucibus.
@@ -132,10 +132,10 @@
                     <div class="card card-custom border-0 text-start">
                         <img class="card-img-top img-fluid" src="holder.js/100px180/">
                         <div class="card-body">
-                            <h4 class="card-title text-custom text-center border-bottom">Titulo do evento
+                            <h4 class="card-title text-custom mx-auto text-center border-bottom" id="titulo">Titulo do evento
                                 <div class="risco-setores"></div>
                             </h4>
-                            <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
+                            <p class="card-text mb-3 descricao-card" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
                                 id
                                 nulla morbi. Cras nisl, euismod velit feugiat vel aliquet elementum. In proin sagittis vitae
                                 tortor sed enim mi diam. Quam ac dui etiam nunc vitae arcu dui faucibus.
@@ -156,10 +156,10 @@
                     <div class="card card-custom border-0 text-start">
                         <img class="card-img-top img-fluid" src="holder.js/100px180/">
                         <div class="card-body">
-                            <h4 class="card-title text-custom text-center border-bottom">Titulo da notícia
+                            <h4 class="card-title text-custom mx-auto text-center border-bottom" id="titulo">Titulo da notícia
                                 <div class="risco-setores"></div>
                             </h4>
-                            <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
+                            <p class="card-text mb-3 descricao-card" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
                                 id
                                 nulla morbi. Cras nisl, euismod velit feugiat vel aliquet elementum. In proin sagittis vitae
                                 tortor sed enim mi diam. Quam ac dui etiam nunc vitae arcu dui faucibus.
@@ -174,10 +174,10 @@
                     <div class="card card-custom border-0 text-start">
                         <img class="card-img-top img-fluid" src="holder.js/100px180/">
                         <div class="card-body">
-                            <h4 class="card-title text-custom text-center border-bottom">Titulo da notícia
+                            <h4 class="card-title text-custom mx-auto text-center border-bottom " id="titulo">Titulo da notícia
                                 <div class="risco-setores"></div>
                             </h4>
-                            <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
+                            <p class="card-text mb-3 descricao-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
                                 id
                                 nulla morbi. Cras nisl, euismod velit feugiat vel aliquet elementum. In proin sagittis vitae
                                 tortor sed enim mi diam. Quam ac dui etiam nunc vitae arcu dui faucibus.
@@ -192,10 +192,10 @@
                     <div class="card card-custom border-0 text-start">
                         <img class="card-img-top img-fluid" src="holder.js/100px180/">
                         <div class="card-body">
-                            <h4 class="card-title text-custom text-center border-bottom">Titulo da notícia
+                            <h4 class="card-title text-custom mx-auto text-center border-bottom" id="titulo">Titulo da notícia
                                 <div class="risco-setores"></div>
                             </h4>
-                            <p class="card-text mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
+                            <p class="card-text mb-3 descricao-card" id="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam tempor
                                 id
                                 nulla morbi. Cras nisl, euismod velit feugiat vel aliquet elementum. In proin sagittis vitae
                                 tortor sed enim mi diam. Quam ac dui etiam nunc vitae arcu dui faucibus.

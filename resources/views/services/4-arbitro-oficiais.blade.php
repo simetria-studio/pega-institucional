@@ -3,16 +3,20 @@
 @section('title', 'ABCJPêga | Relação de árbitros oficiais')
 @section('content')
     <div class="container my-5">
-        <div class="text-center mb-5">
-            <h1 class="default-title">Árbitros Oficiais de Andamento e Morfologia de Jumentos e Muares</h1>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="text-center">
+                    <h2>Árbitros Oficiais de Andamento e Morfologia de Jumentos e Muares</h2>
+                </div>
+                <div class="separador">
+                    <div class="separador-mid"></div>
+                </div>
+            </div>
+            </div>
         </div>
-        <div class="separador">
-            <div class="separador-mid"></div>
-        </div>
-    </div>
     <div class="bg-custom mb-5">
         <div class="container">
-            <div class="row justify-content-around ">
+            <div class="row justify-content-around py-3 ">
                 <div class="col-md-4 text-center text-md-start">
                     <ol>
                         <li class="nav-item">

@@ -4,9 +4,14 @@
 
 @section('content')
     <div class="container my-5">
-        <div class="mb-5">
-            <h1 class="default-title">Gostaria De Se Tornar Um Profissional Credenciado ABCJPEGA?</h1>
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <div class="mb-5 text-center">
+                    <h2>Gostaria De Se Tornar Um Profissional Credenciado ABCJPEGA?</h2>
+                </div>
+            </div>
         </div>
+
         <div class="row justify-content-center align-items-center  g-2">
             <div class="col-md-6">
                 <div class="col-10 mx-auto credenciamento-info">

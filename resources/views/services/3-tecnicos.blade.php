@@ -3,19 +3,24 @@
 @section('title', 'ABCJPêga | Relação de Técnicos')
 @section('content')
     <div class="container my-5">
-        <div class="text-center mb-5">
-            <h1 class="fs-1 ">Inspetores de registro ABCJPÊGA</h1>
-        </div>
         <div class="row justify-content-center">
-            <div class="separador col-md-6 ">
-                <div class="separador-mid"></div>
+            <div class="col-8">
+                <div class="text-center ">
+                    <h2>Inspetores de registro ABCJPÊGA</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="separador col-6 ">
+                        <div class="separador-mid"></div>
+                    </div>
+                </div>
             </div>
         </div>
+
 
     </div>
     <div class="bg-custom mb-5">
         <div class="container">
-            <div class="row justify-content-center text-center text-md-start">
+            <div class="row justify-content-center text-center text-md-start py-3">
                 <div class="col-md-4">
                     <ol>
                         <li class="nav-item ">

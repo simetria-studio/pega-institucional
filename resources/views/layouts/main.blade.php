@@ -22,19 +22,19 @@
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="d-flex justify-content-around align-items-center col-md-1">
-                        <a class="nav-link" href="">
+                        {{-- <a class="nav-link" href="">
                             <iconify-icon icon="fluent-emoji-high-contrast:locked" width="15" height="15">
                             </iconify-icon>
-                        </a>
+                        </a> --}}
                         <a class="nav-link logo" href="{{ url('/') }}">ABCJPÊGA</a>
                     </div>
                     <div class="d-flex justify-content-around align-items-center col-md-1">
-                        <a class="nav-link links" href="#">
+                        <a class="nav-link links" target="_blank" href="https://www.facebook.com/abcjumentopega/">
                             <iconify-icon icon="ant-design:facebook-filled" width="25" height="25">
                             </iconify-icon>
                             </iconify-icon>
                         </a>
-                        <a class="nav-link links" href="#">
+                        <a class="nav-link links" target="_blank" href="https://www.instagram.com/abcjpega/">
                             <iconify-icon icon="ant-design:instagram-filled" width="25" height="25">
                             </iconify-icon>
                         </a>
@@ -70,15 +70,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav text-center fs-6 mx-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
+                            <a class="nav-link " aria-current="page" href="{{ url('/') }}">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/sobre') }}">Sobre</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Serviços</a>
-                            <ul class="dropdown-menu btn-custom ">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Serviços</a>
+                            <ul class="dropdown-menu text-center bg-secondary " aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="{{ url('servicos/emolumentos') }}">Emolumentos</a>
                                 </li>
                                 <li><a class="dropdown-item" href="{{ url('servicos/formularios') }}">Formulários</a>

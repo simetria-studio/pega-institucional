@@ -25,7 +25,7 @@
         <div class="d-flex justify-content-center mb-5">
             <div class="col-md-8 tv-pega mb-5">
                 <h2 class="text-center mb-5">TV Pêga</h2>
-                <div id="noticias-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div id="noticias-carousel" class="carousel noticias slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#noticias-carousel" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Notícia 1"></button>
@@ -201,33 +201,3 @@
 
 @endsection
 
-@section('js')
-    <script>
-        $(document).ready(function() {
-
-
-            'use strict';
-            $('.brasil').on('mouseover', function(e) {
-                let id = e.target.id;
-                $('#' + id).css('fill', '#71191c');
-            });
-            $('.brasil').on('mouseout', function(e) {
-                let id = e.target.id;
-                $('#' + id).css('fill', '#999');
-            });
-            $('.brasil').on('click', function(e) {
-                let id = e.target.id;
-                window.location.href = 'http://127.0.0.1:8000/estado/' + id;
-            });
-
-            $('.descricao').each(function() {
-                var conteudo = $(this).text();
-                var limite = 120;
-                var novoConteudo = conteudo.substr(0, limite) + '...';
-                $(this).text(novoConteudo);
-            });
-
-
-        });
-    </script>
-@endsection
