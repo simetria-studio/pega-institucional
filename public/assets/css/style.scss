@@ -291,7 +291,6 @@ footer {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-
 }
 
 .separador {
@@ -337,14 +336,26 @@ footer {
     margin: 0 auto;
 }
 
-.depoimento {
-    background-color: #71191c;
+.depoimentos {
+    .carousel-indicators {
+        bottom: -20px; /* distância do fundo do slide */
+    }
+
+    .carousel-indicators button {
+        width: 15px; /* largura do indicador */
+        height: 15px; /* altura do indicador */
+        border-radius: 50%; /* deixar o indicador redondo */
+        margin: 0 5px; /* margem entre os indicadores */
+        background-color: #ccc; /* cor do indicador inativo */
+        border: none; /* remover a borda do indicador inativo */
+    }
+
+    .carousel-indicators .active {
+        background-color: #666; /* cor do indicador ativo */
+    }
 
     .texto {
-        max-width: 749px;
-    }
-    .texto p {
-        font-size: 15px;
+        max-width: 700px;
     }
     .foto_depoimento {
         img {
@@ -354,6 +365,8 @@ footer {
             object-fit: cover;
         }
     }
+}
+.depoimentos {
 }
 
 // credenciamento
