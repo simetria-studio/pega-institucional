@@ -16,16 +16,21 @@
 
 </head>
 
+
+
 <body>
     <header>
         <div class="cabecalho">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="d-flex justify-content-around align-items-center col-md-1">
-                        {{-- <a class="nav-link" href="">
-                            <iconify-icon icon="fluent-emoji-high-contrast:locked" width="15" height="15">
-                            </iconify-icon>
-                        </a> --}}
+                        @guest
+                            <a class="nav-link mx-3" href="{{ route('login') }}">
+                                <iconify-icon icon="fluent-emoji-high-contrast:locked" width="20" height="20">
+                                </iconify-icon>
+                            </a>
+                        @endguest
+
                         <a class="nav-link logo" href="{{ url('/') }}">ABCJPÊGA</a>
                     </div>
                     <div class="d-flex justify-content-around align-items-center col-md-1">
@@ -112,14 +117,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/anuncios') }}">Anúncios</a>
                         </li>
+
+
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/register') }}">Associe-se</a>
+                            <a class="nav-link" href="#">Associe-se</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">Sistema Online</a>
+                            <a class="nav-link" href="#">Sistema Online</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ url('/#') }}">Loja</a>
+                            <a class="nav-link" href="#">Loja</a>
                         </li>
                     </ul>
                 </div>

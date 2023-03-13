@@ -1,34 +1,34 @@
-var currentStep = 1;
+// var currentStep = 1;
 
-function nextStep() {
-    currentStep++;
-    showStep(currentStep);
-}
+// function nextStep() {
+//     currentStep++;
+//     showStep(currentStep);
+// }
 
-function prevStep() {
-    currentStep--;
-    showStep(currentStep);
-}
+// function prevStep() {
+//     currentStep--;
+//     showStep(currentStep);
+// }
 
-function showStep(step) {
-    var steps = document.querySelectorAll('[id^="step"]');
-    for (var i = 0; i < steps.length; i++) {
-        steps[i].style.display = "none";
-    }
-    document.querySelector("#step" + step).style.display = "block";
+// function showStep(step) {
+//     var steps = document.querySelectorAll('[id^="step"]');
+//     for (var i = 0; i < steps.length; i++) {
+//         steps[i].style.display = "none";
+//     }
+//     document.querySelector("#step" + step).style.display = "block";
 
-    if (currentStep == 1) {
-        document.querySelector(".prev-btn").style.display = "none";
-    } else {
-        document.querySelector(".prev-btn").style.display = "inline-block";
-    }
+//     if (currentStep == 1) {
+//         document.querySelector(".prev-btn").style.display = "none";
+//     } else {
+//         document.querySelector(".prev-btn").style.display = "inline-block";
+//     }
 
-    if (currentStep == steps.length) {
-        document.querySelector(".next-btn").style.display = "none";
-    } else {
-        document.querySelector(".next-btn").style.display = "inline-block";
-    }
-}
+//     if (currentStep == steps.length) {
+//         document.querySelector(".next-btn").style.display = "none";
+//     } else {
+//         document.querySelector(".next-btn").style.display = "inline-block";
+//     }
+// }
 ///// Limite de textos ///////
 $(document).ready(function () {
     var maxLength = 250; // Define o comprimento máximo do texto
@@ -43,21 +43,23 @@ $(document).ready(function () {
     });
 
     //// Mapa do brasil ////
+    $(".brasil path").hover(
+        function () {
+            $(this).css("fill", "#f00"); // muda a cor do preenchimento
+        },
+        function () {
+            $(this).css("fill", "");
+            var sigla = $(this).attr("id");
+            $("#" + sigla).css("visibility", "hidden");
+        },
+    );
+    // quando um estado é clicado, redireciona para o link correspondente
+    $(".brasil path").click(function () {
+        var linkEstado = $(this).data("link"); // obtém o link do estado a partir do atributo data-link
+        window.location.href = linkEstado; // redireciona para o link do estado
+    });
 
-    ("use strict");
-    $(".brasil").on("mouseover", function (e) {
-        let id = e.target.id;
-        $("#" + id).css("fill", "#71191c");
-    });
-    $(".brasil").on("mouseout", function (e) {
-        let id = e.target.id;
-        $("#" + id).css("fill", "#999");
-    });
-    $(".brasil").on("click", function (e) {
-        let id = e.target.id;
-        window.location.href = "http://127.0.0.1:8000/estado/" + id;
-    });
-
+    //// Limite de textos ////
     $(".descricao").each(function () {
         var conteudo = $(this).text();
         var limite = 120;

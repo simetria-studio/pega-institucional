@@ -78,39 +78,77 @@
         </div>
     </div>
     {{-- equipe --}}
-    <div class="container mb-5">
+
+    <div class="container">
         <h2 class="text-center mb-5">Equipe de Excelência:</h2>
-        <div class="equipe">
-            <div class="membro">
-                <img src="{{ asset('assets/img/foto_mariana.png') }}" class="mb-2" alt="Foto de Mariana">
-                <h5 class="text-custom">Mariana Almeida Melo</h5>
-                <div class="risco mb-2"></div>
-                <span class="fs-6">Serviço De Registro Genealógico</span>
-                <a href="#" class="text-custom fs-6 nav-link">Ver mais</a>
+        <div class="team-container my-5">
+            <div class="team-member">
+                <img src="{{ asset('assets/img/ronan.jpeg') }}" alt="Nome do membro" class="member-image">
+                <div class="member-info">
+                    <h3>Ronan Costa do Carmo</h3>
+                    <p>Coordenador</p>
+                    <div class="social-icons">
+                        <a href="mailto:coordenacao@abcjpega.org.br" target="_blank"><i class="fas fa-envelope-open"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="membro">
-                <img src="{{ asset('assets/img/foto_samuel.png') }}" class="mb-2" alt="Foto de Samuel">
-                <h5 class="text-custom">Samuel Andrade Pinto</h5>
-                <div class="risco mb-2"></div>
-                <span class="fs-6 ">Superintendente</span>
-                <a href="#" class="text-custom fs-6 nav-link">Ver mais</a>
+            <div class="team-member">
+                <img src="{{ asset('assets/img/foto_mariana.png') }}" alt="Nome do membro" class="member-image">
+                <div class="member-info">
+                    <h3>Mariana Almeida Melo</h3>
+                    <p>Registro Genealógico</p>
+                    <div class="social-icons">
+                        <a href="mailto:srg@abcjpega.org.br" target="_blank"><i class="fas fa-envelope-open"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="membro">
-                <img src="{{ asset('assets/img/foto_ivanilson.png') }}" class="mb-2" alt="Foto de Ivanilson">
-                <h5 class="text-custom">Ivanilson Alves</h5>
-                <div class="risco mb-2"></div>
-                <span class="fs-6">Serviço De Registro Genealógico</span>
-                <a href="#" class="text-custom fs-6 nav-link">Ver mais</a>
+            <div class="team-member">
+                <img src="{{ asset('assets/img/foto_samuel.png') }}" alt="Nome do membro" class="member-image">
+                <div class="member-info">
+                    <h3>Samuel Andrade Pinto</h3>
+                    <p>Superintendente</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="membro">
-                <img src="{{ asset('assets/img/foto_rosilene.png') }}" class="mb-2" alt="Foto de Rosilene">
-                <h5 class="text-custom">Rosilene De Oliveira</h5>
-                <div class="risco mb-2"></div>
-                <span class="fs-6">Finançeiro</span>
-                <a href="#" class="text-custom fs-6 nav-link">Ver mais</a>
+            <div class="team-member">
+                <img src="{{ asset('assets/img/foto_ivanilson.png') }}" alt="Nome do membro" class="member-image">
+                <div class="member-info">
+                    <h3>Ivanilson Alves</h3>
+                    <p>Registro Genealógico</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="{{ asset('assets/img/foto_rosilene.png') }}" alt="Nome do membro" class="member-image">
+                <div class="member-info">
+                    <h3>Rosilene De Oliveira</h3>
+                    <p>Finançeiro</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+
+
+    {{-- <div class="container mb-5">
+        <h2 class="text-center mb-5">Equipe de Excelência:</h2>
+        <div class="equipe">
+        </div>
+    </div> --}}
     {{-- Depoimentos --}}
 
     <div class="bg-custom text-light mb-5  p-3">
@@ -237,7 +275,28 @@
     </div>
 
 
+@endsection
 
+@section('js')
+    <script>
+        const membros = $('.membro');
 
+        // para cada membro da equipe, adiciona um event listener para o evento 'mouseenter'
+        membros.each(function() {
+            const linksContainer = $(this).find('.links');
+            const redesSociais = $(this).find('.redes-sociais a');
 
+            $(this).on('mouseenter', function() {
+                linksContainer.show();
+                redesSociais.each(function() {
+                    const link = $('<a>').attr('href', $(this).attr('href')).text($(this).text());
+                    linksContainer.append(link);
+                });
+            });
+
+            $(this).on('mouseleave', function() {
+                linksContainer.hide().empty();
+            });
+        });
+    </script>
 @endsection
