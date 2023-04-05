@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
             <div class="col-10">
                 <div class="mb-5 text-center">
-                    <h2>Gostaria De Se Tornar Um Profissional Credenciado ABCJPEGA?</h2>
+                    <h2>Gostaria de se tornar um profissional credenciado ABCJPEGA?</h2>
                 </div>
             </div>
         </div>

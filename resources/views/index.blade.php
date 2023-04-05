@@ -21,7 +21,6 @@
     </div>
     {{-- TV PEGA  --}}
     <div class="container">
-        <div class="separator my-5"><img src="{{ asset('assets/img/burrinho.png') }}" alt=""></div>
         <div class="d-flex justify-content-center mb-5">
             <div class="col-md-8 tv-pega mb-5">
                 <h2 class="text-center mb-5">TV Pêga</h2>

@@ -6,9 +6,6 @@
     <div class="my-5 text-center">
         <h1 class="">Sobre nós</h1>
     </div>
-    <div class="container mb-5">
-        <div class="separator"><img src="{{ asset('assets/img/burrinho.png') }}" class="img-fluid" alt=""></div>
-    </div>
     {{-- Sobre nos  --}}
     <div class="container mb-5">
         <div class="row  justify-content-around">
@@ -141,14 +138,6 @@
         </div>
     </div>
 
-
-
-
-    {{-- <div class="container mb-5">
-        <h2 class="text-center mb-5">Equipe de Excelência:</h2>
-        <div class="equipe">
-        </div>
-    </div> --}}
     {{-- Depoimentos --}}
 
     <div class="bg-custom text-light mb-5  p-3">

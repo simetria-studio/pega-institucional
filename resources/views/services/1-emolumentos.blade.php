@@ -8,8 +8,6 @@
             <div class="col-12 my-5">
                 <h1 class="text-center">Tabela de Emolumentos</h1>
             </div>
-            <div class="separator col-12 mb-5"><img src="{{ asset('assets/img/burrinho.png') }}" class="img-fluid"
-                    alt=""></div>
             <div class="col-12 my-5">
                 <h3 class="text-center">Tabela de emolumentos cartoriais</h3>
             </div>
@@ -69,7 +67,7 @@
                 <h1 class="default-title text-center">Tabela De Emolumentos Em PDF</h1>
             </div>
             <div class="d-flex justify-content-center mb-5">
-                <a href="{{ asset('#') }}"  class="btn btn-transparent">Download</a>
+                <a href="{{ asset('#') }}" class="btn btn-transparent">Download</a>
             </div>
         </div>
     </div>

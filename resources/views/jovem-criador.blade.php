@@ -7,7 +7,6 @@
         <div class="text-center my-5">
             <h1 class="fs-1 ">Sobre a raça Pêga</h1>
         </div>
-        <div class="separator my-5"><img src="{{ asset('assets/img/burrinho.png') }}" alt=""></div>
     </div>
     <div class="container">
         <h2 class="text-center text-custom my-4 fs-2">Conheça a Raça</h2>
